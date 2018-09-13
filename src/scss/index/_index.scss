@@ -1,0 +1,34 @@
+.car-list {
+    width: 100%;
+    aside {
+        width: 100%;
+        p {
+            width: 100%;
+            height: .4rem;
+            line-height: .4rem;
+            font-size: .28rem;
+            background: rgb(244, 244, 244);
+            padding-left: .3rem;
+            color: #aaa;
+            box-sizing: border-box;
+        }
+        ul {
+            width: 100%;
+            padding: 0 .3rem;
+            box-sizing: border-box;
+            li {
+                height: 1rem;
+                border-bottom: 1px solid #ccc;
+                font-size: .32rem;
+                display: flex;
+                align-items: center;
+                img {
+                    width: .8rem;
+                    height: .8rem;
+                    vertical-align: middle;
+                    margin-right: .2rem;
+                }
+            }
+        }
+    }
+}

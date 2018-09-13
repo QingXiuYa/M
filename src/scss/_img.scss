@@ -1,0 +1,132 @@
+.car-img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #f4f4f4;
+}
+
+.tit {
+    position: fixed;
+    background: #fff;
+    top: 0;
+    width: 100%;
+    height: .8rem;
+    -webkit-box-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    z-index: 99;
+    display: flex;
+    &>p {
+        -webkit-box-flex: 1;
+        flex: 1;
+        text-align: center;
+        box-sizing: border-box;
+        color: #454545;
+        display: inline-block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:last-child {
+            border-left: 1px solid #ececec;
+        }
+        span {
+            max-width: 2.6rem;
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 1.25;
+            font-size: .28rem;
+            &::after {
+                content: "";
+                display: inline-block;
+                padding-top: .16rem;
+                padding-right: .16rem;
+                border-top: 2px solid #ccc;
+                border-right: 2px solid #ccc;
+                -webkit-transform: rotate(135deg);
+                transform: rotate(135deg);
+                margin-left: .2rem;
+                vertical-align: 5%;
+            }
+        }
+    }
+}
+
+.img-list {
+    overflow: hidden;
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    top: .98rem;
+    bottom: 0;
+    overflow-y: scroll;
+    flex-direction: column;
+    -webkit-overflow-scrolling: touch;
+    border-bottom: .4rem solid #f4f4f4;
+    li {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        aside {
+            position: relative;
+            margin-right: .06rem;
+            margin-bottom: .06rem;
+            width: 2.46rem;
+            height: 2.46rem;
+            padding: 0;
+            flex-shrink: 0;
+            &:nth-child(3n+3) {
+                margin-right: 0;
+            }
+            &>img {
+                margin-right: .06rem;
+                margin-bottom: .06rem;
+                width: 2.46rem;
+                height: 2.46rem;
+                padding: 0;
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+            }
+            &>div {
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                background: rgba(56, 90, 130, .5);
+                p {
+                    color: #fff;
+                    display: block;
+                    &:first-child {
+                        font-size: .28rem;
+                        margin-top: .8rem;
+                    }
+                    &:last-child {
+                        font-size: .26rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.show-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: 100;
+}
+
+.show_img_list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: 99;
+}
